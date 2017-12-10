@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Building</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body>
+  <div id="map">
+  </div>
+      
+  <div class="imgParent" id="imgParent">
+  </div>
+
+  <div class="horizonline">
+  	
+  	<div class="text">
+      <img id="back" src="assets/img/back.png"/>
+ 	    <h3 id="title">Welcome to our Presentation</h3>
+      <img id="next" onclick="myClick();" src="assets/img/next.png"/>
+ 	  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyCkJsDkfRpNgYePIgzwtYq7WvgO1E7KWuY"></script>
+  <script src="assets/js/gmaps.js"></script>
+  <script>
+    var map = new GMaps({
+      el: '#map',
+      lat: 48.3967021387,
+      lng: 15.5190722644,
+    });
+  </script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
